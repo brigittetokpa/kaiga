@@ -1,0 +1,12 @@
+table{
+	padding: 20px 30px;
+}
+
+.col-md-4{
+	text-align: center
+}
+
+.btn-warning:hover{
+
+color:black;
+}

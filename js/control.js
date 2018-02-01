@@ -1,0 +1,32 @@
+//alert("salimata");
+$(document).ready(function()
+{
+	$("#btnValider").click(function()
+	{
+		$("#btnValider").text('enregistrer...');
+		$("#btnValider").attr('disabled',true);
+		$.post(url,
+		{
+			nom:$('#nom').val(),
+			prenom:$('#prenom').val(),
+			tel:$('#tel').val(),
+			adresse:$('#adresse').val(),
+			description:$('#description').val(),
+			
+		},function(data){
+				if(data==1){
+					$("#btnValider").text('enregistrer');
+					$("#btnValider").attr('disabled',false);
+					nom:$('#nom').val(''),
+					prenom:$('#prenom').val(''),
+					tel:$('#tel').val(''),
+					adresse:$('#adresse').val(''),
+					description:$('#description').val(''),
+				}else
+					{
+						alert(data);
+					}
+				console.log(data);
+		});
+	});
+});

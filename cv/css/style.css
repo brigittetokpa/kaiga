@@ -1,0 +1,20 @@
+#blocHaut{
+	background-color: blue;
+	height: 70px;
+	width:100%;
+}
+
+#blocCentral{
+	background-color: red;
+	height: 400px;
+	width: 100%;
+}
+#blocCentrale2{
+	background-color: black;
+	height: 300px;
+	width: 100%;
+}
+#blocBas{
+	background-color: gray;
+	height: 70px;
+	width: 100%;
